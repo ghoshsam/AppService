@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Core\AppService.Core\AppService.Core.csproj" />
+  </ItemGroup>
+
 </Project>

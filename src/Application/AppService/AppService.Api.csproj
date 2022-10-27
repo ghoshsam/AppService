@@ -18,4 +18,9 @@
     <Folder Include="Filters\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\AppService.Core\AppService.Core.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\AppService.Infrastructure\AppService.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
