@@ -11,11 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC11D4C8-3087-4DFA-B839-7EA428273B1D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientService.Api", "src\PatientService\PatientService.Api.csproj", "{588B3A88-FAB4-4365-9DE2-D50843655100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppService.Api", "src\PatientService\AppService.Api.csproj", "{588B3A88-FAB4-4365-9DE2-D50843655100}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientService.Infrastructure", "src\Infrastructure\PatientService.Infrastructure\PatientService.Infrastructure.csproj", "{A98CAD07-742A-4987-8E52-1588D81A212C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppService.Infrastructure", "src\Infrastructure\PatientService.Infrastructure\AppService.Infrastructure.csproj", "{A98CAD07-742A-4987-8E52-1588D81A212C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientService.Core", "src\Core\PatientService.Core\PatientService.Core.csproj", "{EB23D7C1-B22F-4F4D-BCF5-A84FFEBB38D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppService.Core", "src\Core\PatientService.Core\AppService.Core.csproj", "{EB23D7C1-B22F-4F4D-BCF5-A84FFEBB38D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B48E9B98-E163-4DDD-A7C6-CB71B5B59618}"
 EndProject

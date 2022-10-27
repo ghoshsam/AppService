@@ -1,4 +1,4 @@
-namespace PatientService.Api
+namespace AppService.Api
 {
     public class WeatherForecast
     {
