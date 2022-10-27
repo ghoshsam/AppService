@@ -1,4 +1,4 @@
-﻿namespace PatientService.Infrastructure
+﻿namespace PatientService.Api.Infrastructure
 {
     public class Class1
     {

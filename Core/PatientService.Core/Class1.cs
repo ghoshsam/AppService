@@ -1,4 +1,4 @@
-﻿namespace PatientService.Core
+﻿namespace PatientService.Api.Core
 {
     public class Class1
     {
