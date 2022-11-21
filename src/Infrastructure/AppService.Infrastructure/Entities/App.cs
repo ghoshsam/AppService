@@ -11,7 +11,7 @@ namespace AppService.Infrastructure.Entities
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         public string AppName { get; set; }
         [Required]

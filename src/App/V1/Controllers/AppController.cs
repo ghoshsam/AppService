@@ -7,10 +7,10 @@ namespace AppService.Api.V1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AppController : ControllerBase
+    public class AppsController : ControllerBase
     {
         private readonly IAppService _appService;
-        public AppController(IAppService appService)
+        public AppsController(IAppService appService)
         {
             _appService = appService?? throw new ArgumentNullException(nameof(appService));
                 
@@ -20,7 +20,7 @@ namespace AppService.Api.V1.Controllers
         /// </summary>
         /// <returns>Apps</returns>
         [HttpGet]
-        [Route("Apps")]
+       // [Route("Apps")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]

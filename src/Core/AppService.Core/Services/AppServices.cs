@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace AppService.Core.Services
 {
-    public class AppService : IAppService
+    public class AppServices: IAppService
     {
         private readonly IAppRepository _appRepository;
-        public AppService(IAppRepository appRepository)
+        public AppServices(IAppRepository appRepository)
         {
             _appRepository = appRepository?? throw new ArgumentNullException(nameof(appRepository));
         }
