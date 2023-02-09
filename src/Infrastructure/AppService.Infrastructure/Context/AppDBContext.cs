@@ -8,7 +8,7 @@ using AppService.Infrastructure.Entities;
 
 namespace AppService.Infrastructure.Context
 {
-    public class AppDBContext:DbContext
+    public class AppDBContext:DbContext 
     {
         public AppDBContext(DbContextOptions<AppDBContext> options):base(options)
         {

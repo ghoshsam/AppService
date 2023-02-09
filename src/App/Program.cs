@@ -1,5 +1,7 @@
 
 
+using AppService.Core.Extentions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +16,7 @@ builder.Services.AddInfrastracture();
 
 
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddRouting(options=>options.LowercaseUrls=true);
 
 var app = builder.Build();
 
@@ -23,7 +26,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("swagger/v1/swagger.json", "App Service");
+    c.RoutePrefix=String.Empty;
+}
+    );
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

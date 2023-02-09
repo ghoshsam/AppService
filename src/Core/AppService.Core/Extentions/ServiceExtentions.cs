@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace AppService.Core.Extentions.DependencyInjection
 {
     public static class ServiceExtentions
     {
