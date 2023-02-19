@@ -13,7 +13,9 @@ namespace AppService.Core.Extentions.DependencyInjection
     {
         public static IServiceCollection AddCore(this IServiceCollection services)
         {
+            services.AddScoped<IJwtTokenService, JwtTokenService>();
             services.AddScoped<IAppService, AppServices>();
+            services.AddScoped<IOtpService, OtpService>();
             return services;
 
         }

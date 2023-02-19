@@ -1,9 +1,9 @@
-namespace AppService.Api.Tests
+namespace AppService.Api.V1.Tests
 {
-    public class UnitTest1
+    public class AppControllerTests
     {
         [Fact]
-        public void Test1()
+        public void App()
         {
 
         }

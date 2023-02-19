@@ -1,22 +1,21 @@
-﻿using AppService.Core.Interfaces.Repositories;
+﻿using AppService.Core.Interfaces.Infrastructure;
+using AppService.Core.Interfaces.Repositories;
 using AppService.Infrastructure.Context;
 using AppService.Infrastructure.Repositories;
+using AppService.Infrastructure.SMS.SMSCountry;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class InfrastractureExtentiuons
     {
 
-        public static IServiceCollection AddInfrastracture(this IServiceCollection services)
+        public static IServiceCollection AddInfrastracture(this IServiceCollection services , IConfiguration configuration)
         {
+          
+            services.Configure<SMSCountryOptions>(configuration.GetSection("SMSCountryOptions"));
+            services.AddScoped<ISMSService, SMSService>();
             services.AddScoped<IAppRepository, AppRepository>();
             services.AddDbContext<AppDBContext>(opt => opt.UseInMemoryDatabase("Apps"));
             services.AddScoped<DbContext, AppDBContext>();
